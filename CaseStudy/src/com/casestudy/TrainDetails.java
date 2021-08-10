@@ -9,7 +9,7 @@ import java.sql.Statement;
 public class TrainDetails {
 	public Train findTrain(int trainNo) throws ClassNotFoundException, SQLException {
 		Class.forName("oracle.jdbc.OracleDriver");
-		Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:XE", "hr", "shantanu");
+		Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:XE", "hr", "123");
 		Statement statement = connection.createStatement();
 		
 		String query = "SELECT * FROM TRAINS WHERE TRAIN_NO = " + trainNo;
